@@ -51,6 +51,7 @@ namespace calculator
                     Console.WriteLine("Корень числа " + a + " равен " + c);
                 }
             }
+         
 
             else
                 Console.Write("Введите число b: ");
@@ -86,6 +87,11 @@ namespace calculator
                     Console.WriteLine("Частное ваших чисел равно " + c);
 
                 }
+            }
+            else if(oper=='^')
+            {
+                c = Math.Pow(a, b);
+                Console.WriteLine(a+" в степени "+b+" равно "+ c);
             }
             else
             {
